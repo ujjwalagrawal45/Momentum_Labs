@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "momentum-lab"
+version = "0.1.0"
+description = "Momentum strategy builder, backtester and month-end trading assistant for NSE stocks (Nifty 500)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "flask>=3.0",
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "openpyxl>=3.1",
+    "pandas>=2.1",
+    "requests>=2.31",
+    "scikit-learn>=1.4",
+    "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+momentum-lab = "momentum_lab.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["momentum_lab*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

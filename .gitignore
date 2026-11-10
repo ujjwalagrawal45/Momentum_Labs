@@ -1,0 +1,36 @@
+# --- secrets: NEVER share ---
+.env
+*.token
+upstox_token*
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+
+# --- downloaded / regenerated (rebuild with: python -m momentum_lab fetch) ---
+data/raw/
+data/fno_symbols.csv
+
+# --- generated from the settings workbook on every run ---
+configs/
+
+# --- personal: your trades and results ---
+journal/
+output/
+Portfolio Allocator.xlsx
+backup/
+*(backup *).xlsx
+~$*.xlsx
+
+# --- editors / OS ---
+.vscode/
+.idea/
+.claude/
+Thumbs.db
+.DS_Store

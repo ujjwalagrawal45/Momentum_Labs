@@ -1,0 +1,4 @@
+# Normalise line endings in the repo; Windows checkouts still get CRLF
+* text=auto
+*.bat text eol=crlf
+*.xlsx binary

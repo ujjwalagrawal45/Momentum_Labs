@@ -1,0 +1,9 @@
+# Exact versions this lab was last verified with (Python 3.13). For a looser install: pip install -e .
+flask==3.1.1
+matplotlib==3.10.3
+numpy==2.1.2
+openpyxl==3.1.5
+pandas==2.3.1
+requests==2.32.4
+scikit-learn==1.7.1
+scipy==1.16.1
